@@ -1,6 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  env: {
+    NEXT_APP_API_KEY: process.env.NEXT_APP_API_KEY,
+  },
+};
