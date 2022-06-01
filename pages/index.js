@@ -57,7 +57,7 @@ function App() {
 
       const url = e.target.elements.tweetURL.value;
       const id = url.split('/')[5];
-      const { data } = await axios.get(`/api/tweet/${id}`);
+      const { data, status } = await axios.get(`/api/tweet/${id}`);
       setLoading(false);
       setTweetData(data.data);
       setError(false);
